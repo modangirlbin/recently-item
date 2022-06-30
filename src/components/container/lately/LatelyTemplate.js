@@ -14,44 +14,42 @@ class LatelyTemplate extends Component {
 					id: 1,
 					date: '12.10',
 					content: [
-						{type: 'default'},
-						{type: 'check', ico:'ico_video'},
-						{type: 'check', ico:'ico_mark'}
+						{id:1,type: 'default'},
+						{id:2,type: 'check', ico:'ico_video'},
+						{id:3,type: 'check', ico:'ico_mark'}
 					]
 				},
 				{
 					id :2,
 					date: '12.11',
 					content: [
-						{type: 'check', ico:'ico_video'},
-						{type: 'default'},
-						{type: 'check', ico:'ico_mark'}
+						{id:1,type: 'check', ico:'ico_video'},
+						{id:2,type: 'default'},
+						{id:3,type: 'check', ico:'ico_mark'}
 					]
 				},
 				{
 					id :3,
 					date: '12.15',
 					content: [
-						{type: 'default'},
-						{type: 'default'},
-						{type: 'check', ico:'ico_video'}
+						{id:1,type: 'default'},
+						{id:2,type: 'default'},
+						{id:3,type: 'check', ico:'ico_video'}
 					]
 				}
 			]
 		}
 	}
 	render(){
-		// console.log(this.state);
 		let lists = [];
 		let i = 0;
 		let data = this.state.data;
 		while(i<this.state.data.length){
 			lists.push(
-			<ItemsTemplate key={this.state.data.id} data={this.state.data[i]} idx={i}/>
+			<ItemsTemplate key={data[i].id} key2={data[i].content} data={data[i]} idx={i}/>
 			);
 			i++;
 		}
-		console.log(i);
 		return (
 			<div className="lately_product">
 				{lists}
