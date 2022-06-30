@@ -6,50 +6,19 @@ import ItemsTemplate from './Items/ItemsTemplate';
 //constructor 생성자, js문법 클래스생성차 클래스 실행할때 바로생성
 //super 모두상속
 class LatelyTemplate extends Component {
-	constructor(props){
-		super(props);
-		this.state = {
-			data : [
-				{
-					id: 1,
-					date: '12.10',
-					content: [
-						{id:1,type: 'default'},
-						{id:2,type: 'check', ico:'ico_video'},
-						{id:3,type: 'check', ico:'ico_mark'}
-					]
-				},
-				{
-					id :2,
-					date: '12.11',
-					content: [
-						{id:1,type: 'check', ico:'ico_video'},
-						{id:2,type: 'default'},
-						{id:3,type: 'check', ico:'ico_mark'}
-					]
-				},
-				{
-					id :3,
-					date: '12.15',
-					content: [
-						{id:1,type: 'default'},
-						{id:2,type: 'default'},
-						{id:3,type: 'check', ico:'ico_video'}
-					]
-				}
-			]
-		}
-	}
+
 	render(){
+		//날짜별 리스트
 		let lists = [];
 		let i = 0;
-		let data = this.state.data;
-		while(i<this.state.data.length){
+		let data = this.props.data2;
+		while(i < data.length){
 			lists.push(
 			<ItemsTemplate key={data[i].id} key2={data[i].content} data={data[i]} idx={i}/>
 			);
 			i++;
 		}
+
 		return (
 			<div className="lately_product">
 				{lists}

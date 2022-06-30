@@ -17,7 +17,7 @@ const ItemsTemplate = ({data, idx, key2}) => {
 					<ItemCheck key={key2[i].id} ico={data2[i].ico}/>
 				);
 			}
-			if (data2[i].type === 'default') {
+			else if (data2[i].type === 'default') {
 				lists2.push(
 					<ItemDefault key={key2[i].id}/>
 				);

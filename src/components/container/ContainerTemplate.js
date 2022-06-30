@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BannerSignIn from './BannerSignIn';
+// import BannerSignIn from './BannerSignIn';
 import BoxOption from './BoxOption';
 import LatelyTemplate from './lately/LatelyTemplate';
 // 단점 : css 두형태 작성헷갈리고, 찾기 힘들고, 수정힘들고
@@ -18,10 +18,11 @@ class ContainerTemplate extends Component {
     return (
       <div id="container" className="container" style={styles.container}>
         <div id="content" className="content" style={styles.content}>
-          <BannerSignIn/>
+          {/* <BannerSignIn/> */}
           <div className="wrap_lately">
-            <BoxOption/>
-            <LatelyTemplate/>
+            <BoxOption item_count2={this.props.item_count}/>
+            {console.log(this.props.item_count)}
+            <LatelyTemplate data2={this.props.data}/>
           </div>
         </div>
       </div>
