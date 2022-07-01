@@ -20,9 +20,19 @@ class ContainerTemplate extends Component {
         <div id="content" className="content" style={styles.content}>
           {/* <BannerSignIn/> */}
           <div className="wrap_lately">
-            <BoxOption item_count2={this.props.item_count}/>
-            {console.log(this.props.item_count)}
-            <LatelyTemplate data2={this.props.data}/>
+            <BoxOption 
+              item_count2={this.props.item_count} 
+              filterItems={function(){
+                
+              }}
+            />
+            {/* {console.log(this.props.item_count)} */}
+            <LatelyTemplate 
+              data2={this.props.data}
+              deleteItem={function(a,b){
+                this.props.deleteItem(a,b);
+              }}
+            />
           </div>
         </div>
       </div>

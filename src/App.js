@@ -4,58 +4,52 @@ import ContainerTemplate from './components/container/ContainerTemplate';
 import Footer from './components/Footer';
 
 class App extends Component {
+
   constructor(props){
 		super(props);
 		this.state = {
-			data : [
-				{
-					id: 1,
-					date: '12.10',
-					content: [
-						{id: 1, type: 'default'},
-						{id: 2, type: 'check', ico:'ico_video'},
-						{id: 3, type: 'check', ico:'ico_mark'}
-					]
-				},
-				{
-					id :2,
-					date: '12.11',
-					content: [
-						{id: 1, type: 'check', ico:'ico_video'},
-						{id: 2, type: 'default'},
-						{id: 3, type: 'check', ico:'ico_mark'}
-					]
-				},
-				{
-					id :3,
-					date: '12.15',
-					content: [
-						{id: 1, type: 'default'},
-						{id: 2, type: 'default'},
-						{id: 3, type: 'check', ico:'ico_video'}
-					]
-				}
-			],
+			data: {},
 			count: 0
 		}
-		//상품갯수
-		let item_count = 0;
-		let j = 0;
-		while(j < this.state.data.length){
-			item_count = item_count + this.state.data[j].content.length
-			j++;			
-		}
-		this.state.count = item_count;
-		console.log(this.state.count);
 	}
+	componentDidMount(){
+    fetch('data.json')
+      .then(function(result){
+        return result.json();
+      })
+      .then(function(json){
+        this.setState({data:json});
+			console.log(json);
 
+		// 상품갯수
+		let num = 0, i = 0;
+		while(i < json.length){
+			num = num + json[i].content.length;
+			i++;			
+		}
+		this.setState({count:num});
+		}.bind(this));
+
+  }
+	
   render() {
+		//삭제버튼
+		const deleteItem = (a, b) => {
+			this.state[a].splice(b,1)
+		}
     return (
-      <div>
+      <React.Fragment>
+				{console.log(this.state)}
         <Header/>
-        <ContainerTemplate data={this.state.data} item_count={this.state.count}/>
+        <ContainerTemplate 
+					data={this.state.data} 
+					item_count={this.state.count}
+					deleteItem={function(a, b){
+						deleteItem(a,b);
+					}}
+				/>
         <Footer/>
-      </div>
+      </React.Fragment>
     );
   }
 }

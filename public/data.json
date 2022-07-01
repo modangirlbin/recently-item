@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "date": "12.10",
+    "content": [
+      {"id": "1", "type": "default"},
+      {"id": "2", "type": "check", "ico": "ico_video"},
+      {"id": "3", "type": "check", "ico": "ico_mark"}
+    ]
+  },
+  {
+    "id": "2",
+    "date": "12.11",
+    "content": [
+      {"id": "1", "type": "check", "ico":"ico_video"},
+      {"id": "2", "type": "default"},
+      {"id": "3", "type": "check", "ico":"ico_mark"}
+    ]
+  },
+  {
+    "id" :"3",
+    "date": "12.15",
+    "content": [
+      {"id": "1", "type": "default"},
+      {"id": "2", "type": "default"},
+      {"id": "3", "type": "check", "ico":"ico_video"}
+    ]
+  }
+]

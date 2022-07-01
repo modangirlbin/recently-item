@@ -18,7 +18,10 @@ class ItemDefault extends Component {
 				</a>
 				{/* selected */}
 				<button type="button" className="btn_choice"><span className="ico_heart">쇼핑찜하기</span></button>
-				<button type="button" className="btn_del"><span className="ic2_14">삭제하기</span></button>
+				<button type="button" className="btn_del" onClick={function(e){
+					e.preventDefault();
+					this.props.deleteItem(this.props.id, this.props.id2);
+				}.bind(this)}><span className="ic2_14">삭제하기</span></button>
 			</li>
 		);
   }

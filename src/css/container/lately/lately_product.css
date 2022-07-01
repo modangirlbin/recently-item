@@ -98,7 +98,7 @@
     overflow: hidden;
     display: inline-block;
     background-repeat: no-repeat;
-    /* background-image: url(../img/common/cjmall/m/sp_bt_x.png); */
+    background-image: url(../../../img/sp_bt_x.png);
     -webkit-background-size: 82px auto;
     background-size: 82px auto
 }

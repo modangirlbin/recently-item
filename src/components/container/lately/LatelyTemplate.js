@@ -14,7 +14,11 @@ class LatelyTemplate extends Component {
 		let data = this.props.data2;
 		while(i < data.length){
 			lists.push(
-			<ItemsTemplate key={data[i].id} key2={data[i].content} data={data[i]} idx={i}/>
+			<ItemsTemplate 
+				key={data[i].id} key2={data[i].content} 
+				data={data[i]} idx={i} 
+				// deleteItem2={function(){console.log('hi')}}
+			/>
 			);
 			i++;
 		}

@@ -1,4 +1,5 @@
-// import React, { Component } from 'react';
+// eslint-disable-next-line
+import React, { Component } from 'react';
 import '../../../../css/container/lately/lately_product.css';
 import '../../../../css/container/lately/item_lately.css';
 import ItemCheck from './ItemCheck';
@@ -19,7 +20,15 @@ const ItemsTemplate = ({data, idx, key2}) => {
 			}
 			else if (data2[i].type === 'default') {
 				lists2.push(
-					<ItemDefault key={key2[i].id}/>
+					<ItemDefault 
+						key = {key2[i].id} 
+						id  = {idx} 
+						id2 = {key2[i].id}
+						deleteItem = {function(a, b){
+							// this.props.deleteItem2(a, b);
+							console.log(a, b);
+						}}
+					/>
 				);
 			}
 			i++;

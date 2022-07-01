@@ -8,7 +8,7 @@ class Header extends Component {
 			<header id="header" className="visible head_sub_type">	
 				<div className="wrap_tit">
 					<h1 className="tit">
-					가나다라마바사아자차카타파하
+					최근 본 상품
 					</h1>
 					<a href="http://dev-markup.cjmall.com/jsp/dp_lately/m/lately_product.jsp#off_canvas" className="btn_navi"><span>전체메뉴 열기</span></a>
 					<a href="http://dev-markup.cjmall.com/jsp/dp_lately/m/lately_product.jsp#" className="btn_srh"><span className="blind">검색페이지로 이동</span></a>
