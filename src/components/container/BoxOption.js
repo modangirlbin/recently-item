@@ -5,7 +5,6 @@ class BoxOption extends Component {
   render() {
     return (
       <div className="box_option">
-          {/* {console.log(this.props.item_count2);} */}
             <span className="piece_total"><span className="num">{this.props.item_count2}</span>개</span>
             <div className="option_area">
                 <span className="u_chkbx chkbx_only_prd">

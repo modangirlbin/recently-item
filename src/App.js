@@ -6,11 +6,12 @@ import Footer from './components/Footer';
 class App extends Component {
 
   constructor(props){
-		super(props);
+		super(props); 
 		this.state = {
 			data: {},
 			count: 0
 		}
+		// console.log(this.state)
 	}
 	componentDidMount(){
     fetch('data.json')
@@ -19,7 +20,7 @@ class App extends Component {
       })
       .then(function(json){
         this.setState({data:json});
-			console.log(json);
+			// console.log(json);
 
 		// 상품갯수
 		let num = 0, i = 0;
@@ -33,20 +34,15 @@ class App extends Component {
   }
 	
   render() {
-		//삭제버튼
-		const deleteItem = (a, b) => {
-			this.state[a].splice(b,1)
-		}
     return (
       <React.Fragment>
-				{console.log(this.state)}
         <Header/>
         <ContainerTemplate 
 					data={this.state.data} 
 					item_count={this.state.count}
-					deleteItem={function(a, b){
-						deleteItem(a,b);
-					}}
+					// deleteItem={function(a, b){
+					// 	deleteItem(a,b);
+					// }}
 				/>
         <Footer/>
       </React.Fragment>

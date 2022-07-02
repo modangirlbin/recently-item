@@ -23,11 +23,7 @@ const ItemsTemplate = ({data, idx, key2}) => {
 					<ItemDefault 
 						key = {key2[i].id} 
 						id  = {idx} 
-						id2 = {key2[i].id}
-						deleteItem = {function(a, b){
-							// this.props.deleteItem2(a, b);
-							console.log(a, b);
-						}}
+						id2 = {key2[i].id-1}
 					/>
 				);
 			}
