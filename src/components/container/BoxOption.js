@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
+import store from '../../store';
 import '../../css/container/box_optioin.css';
 
 class BoxOption extends Component {
+  state = store.getState();
+  constructor(props){
+    super(props);
+    store.subscribe(function(){  //store가 바뀌었을때
+      this.setState({state:store.getState()}); //number값을 가져와서 this에 설정
+    }.bind(this));
+
+  }
+
+
   render() {
     return (
       <div className="box_option">
