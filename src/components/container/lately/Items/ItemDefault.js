@@ -31,12 +31,13 @@ class ItemDefault extends Component {
 				</a>
 				{/* selected */}
 				<button type="button" className="btn_choice"><span className="ico_heart">쇼핑찜하기</span></button>
-				<button type="button" className="btn_del" onClick={function(e){
-					e.preventDefault();
-					// console.log(this.props.id , Number(this.props.id2));
-					store.dispatch({type:'DELETE', idx1:this.props.id, idx2:Number(this.props.id2)});
-					console.log(this.state, this.props.id)
-				}.bind(this)}><span className="ic2_14">삭제하기</span></button>
+				<button type="button" className="btn_del" 
+				// onClick={function(e){
+				// 	e.preventDefault();
+				// 	console.log(this.props.id , Number(this.props.id2));
+				// 	store.dispatch({type:'DELETE', idx1:this.props.id, idx2:Number(this.props.id2)});
+				// }.bind(this)}
+				><span className="ic2_14">삭제하기</span></button>
 			</li>
 		);
   }
