@@ -3,7 +3,7 @@ import store from '../../store';
 import '../../css/container/box_optioin.css';
 
 class BoxOption extends Component {
-  state = store.getState()
+  state = store.getState();
   constructor(props){
     super(props);
     store.subscribe(function(){  //store가 바뀌었을때

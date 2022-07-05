@@ -39,10 +39,9 @@ export default createStore(function(state, action){
     return data;
   }
   if(action.type === 'DELETE'){
-      // return {state[1]:state[1].splice(1,1)}
-      data.arr[action.idx1].content.splice(action.idx2,1);
-      console.log(state)
-      return data;
+      return {...data, data: data.arr[action.idx1].content.splice(action.idx2,1) };
+      // console.log(data);
   }
   return state;
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) 
+console.log(data)
