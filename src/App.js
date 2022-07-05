@@ -18,14 +18,14 @@ class App extends Component {
       this.setState({state:store.getState()}); //number값을 가져와서 this에 설정
     }.bind(this));
 		console.log(this.state);
-    // fetch('data.json')
+
+		// fetch('data.json')
     //   .then(function(result){
     //     return result.json();
     //   })
     //   .then(function(json){
     //     this.setState({data:json});
-			// console.log(json);
-
+		
 		// 상품갯수
 		let num = 0, i = 0;
 		while(i < this.state.data.length){
@@ -37,10 +37,6 @@ class App extends Component {
   }
 	
   render() {
-		// //삭제버튼
-		// const deleteItem = (a, b) => {
-		// 	this.state[a].splice(b,1)
-		// }
     return (
       <React.Fragment>
 				{console.log(this.state)}

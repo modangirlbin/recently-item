@@ -3,7 +3,7 @@ import store from '../../../../store';
 import '../../../../css/container/lately/lately_product.css';
 
 class ItemDefault extends Component {
- state = store.getState();
+ state = {arr: store.getState()}
   // constructor(props){
   //   super(props);
   //   store.subscribe(function(){  //store가 바뀌었을때
