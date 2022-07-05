@@ -25,19 +25,19 @@ class App extends Component {
     //     this.setState({data:json});
 		
 		// 상품갯수
-		let num = 0, i = 0;
-		while(i < this.state.arr.length){
-			num = num + this.state.arr[i].content.length;
-			i++;			
-		}
-		this.setState({count:num});
+		// let num = 0, i = 0;
+		// while(i < this.state.arr.length){
+		// 	num = num + this.state.arr[i].content.length;
+		// 	i++;			
+		// }
+		// this.setState({count:num});
 
   }
 	
   render() {
     return (
       <React.Fragment>
-				{/* {console.log(this.state.arr)} */}
+				{console.log(this.state)}
         <Header/>
         <ContainerTemplate 
 					data={this.state.arr} 

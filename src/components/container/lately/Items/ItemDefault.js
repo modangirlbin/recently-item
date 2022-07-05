@@ -20,7 +20,13 @@ class ItemDefault extends Component {
 					</div>
 				</a>
 				{/* selected */}
-				<button type="button" className="btn_choice"><span className="ico_heart">쇼핑찜하기</span></button>
+				<button type="button" className="btn_choice" onClick={function(e){
+					e.preventDefault();
+					console.log(e.target)
+					e.target.parentNode.classList.toggle('selected');
+				}.bind(this)}>
+					<span className="ico_heart">쇼핑찜하기</span>
+				</button>
 				<button type="button" className="btn_del" onClick={function(e){
 					e.preventDefault();
 					store.dispatch({type:'DELETE', idx1:this.props.id, idx2:Number(this.props.id2)});

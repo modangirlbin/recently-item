@@ -4,12 +4,12 @@ import '../../css/container/box_optioin.css';
 
 class BoxOption extends Component {
   state = store.getState()
-  // constructor(props){
-  //   super(props);
-  //   store.subscribe(function(){  //store가 바뀌었을때
-  //     this.setState = store.getState();//number값을 가져와서 this에 설정
-  //   }.bind(this));
-  // }
+  constructor(props){
+    super(props);
+    store.subscribe(function(){  //store가 바뀌었을때
+      this.setState = store.getState();//number값을 가져와서 this에 설정
+    }.bind(this));
+  }
 	componentDidMount(){
     // 상품갯수 
 		let num = 0, i = 0;
@@ -18,12 +18,13 @@ class BoxOption extends Component {
 			i++;			
 		}
 		this.setState({count:num});
+    console.log(this.state.count)
   }
 
   render() {
     return (
       <div className="box_option">
-          {/* {console.log(this.props.item_count2);} */}
+          {console.log(this.state)}
             <span className="piece_total"><span className="num">{this.state.count}</span>개</span>
             <div className="option_area">
                 <span className="u_chkbx chkbx_only_prd">
