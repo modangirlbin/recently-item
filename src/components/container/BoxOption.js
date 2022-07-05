@@ -3,23 +3,19 @@ import store from '../../store';
 import '../../css/container/box_optioin.css';
 
 class BoxOption extends Component {
-  state = {
-    arr: store.getState(),
-    count: 0
-  }
-  constructor(props){
-    super(props);
-    store.subscribe(function(){  //store가 바뀌었을때
-      this.setState({state:store.getState()}); //number값을 가져와서 this에 설정
-    }.bind(this));
-
-  }
+  state = store.getState();
+  // constructor(props){
+  //   super(props);
+  //   store.subscribe(function(){  //store가 바뀌었을때
+  //     this.setState({state:store.getState()}); //number값을 가져와서 this에 설정
+  //   }.bind(this));
+  // }
 
 
   render() {
     return (
       <div className="box_option">
-          {/* {console.log(this.props.item_count2);} */}
+          {/* {console.log(this.state)} */}
             <span className="piece_total"><span className="num">{this.props.item_count2}</span>개</span>
             <div className="option_area">
                 <span className="u_chkbx chkbx_only_prd">

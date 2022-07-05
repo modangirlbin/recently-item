@@ -8,16 +8,14 @@ class App extends Component {
 
   constructor(props){
 		super(props);
-		this.state = {
-			data: store.getState(),
-			count: 0
-		}
+		this.state = store.getState();
 	}
+
 	componentDidMount(){
 		store.subscribe(function(){  //store가 바뀌었을때
       this.setState({state:store.getState()}); //number값을 가져와서 this에 설정
     }.bind(this));
-		console.log(this.state);
+		// console.log(this.state.arr);
 
 		// fetch('data.json')
     //   .then(function(result){
@@ -28,8 +26,8 @@ class App extends Component {
 		
 		// 상품갯수
 		let num = 0, i = 0;
-		while(i < this.state.data.length){
-			num = num + this.state.data[i].content.length;
+		while(i < this.state.arr.length){
+			num = num + this.state.arr[i].content.length;
 			i++;			
 		}
 		this.setState({count:num});
@@ -39,10 +37,10 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-				{console.log(this.state)}
+				{/* {console.log(this.state.arr)} */}
         <Header/>
         <ContainerTemplate 
-					data={this.state.data} 
+					data={this.state.arr} 
 					item_count={this.state.count}
 				/>
         <Footer/>

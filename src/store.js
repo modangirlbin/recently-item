@@ -30,18 +30,19 @@ let data =
           {"id": "3", "type": "check", "ico":"ico_video"}
         ]
       }
-    ]
+    ],
+    count: 0
   }
 
 export default createStore(function(state, action){
   if(state === undefined){  //초기값
-    return data.arr;
+    return data;
   }
   if(action.type === 'DELETE'){
       // return {state[1]:state[1].splice(1,1)}
       data.arr[action.idx1].content.splice(action.idx2,1);
-      return data.arr;
-      
+      console.log(state)
+      return data;
   }
   return state;
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) 

@@ -29,9 +29,6 @@ class ContainerTemplate extends Component {
             {/* {console.log(this.props.item_count)} */}
             <LatelyTemplate 
               data2={this.props.data}
-              deleteItem={function(a,b){
-                this.props.deleteItem(a,b);
-              }}
             />
           </div>
         </div>
