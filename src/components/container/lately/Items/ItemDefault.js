@@ -3,7 +3,7 @@ import store from '../../../../store';
 import '../../../../css/container/lately/lately_product.css';
 
 class ItemDefault extends Component {
- state = store.getState();
+ state = store.getState()
 
   render() {
 		return (

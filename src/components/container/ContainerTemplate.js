@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import BannerSignIn from './BannerSignIn';
-import BoxOption from './BoxOption';
+import BoxOption from '../wrap/BoxOption';
 import LatelyTemplate from './lately/LatelyTemplate';
 // 단점 : css 두형태 작성헷갈리고, 찾기 힘들고, 수정힘들고
 let styles = {
