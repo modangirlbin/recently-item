@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../css/container/box_optioin.css';
+import '../../css/views/box_optioin.css';
 
 class BoxOption extends Component {
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../../css/container/lately/lately_product.css';
+import '../../../css/views/lately/lately_product.css';
 import ItemsTemplate from './Items/ItemsTemplate';
 // 쪼개는 단점 :경로 복잡해짐
 

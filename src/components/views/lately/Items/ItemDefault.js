@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import store from '../../../../store';
-import '../../../../css/container/lately/lately_product.css';
+import '../../../../css/views/lately/lately_product.css';
 
 class ItemDefault extends Component {
  state = store.getState()
@@ -22,9 +22,8 @@ class ItemDefault extends Component {
 				{/* selected */}
 				<button type="button" className="btn_choice" onClick={function(e){
 					e.preventDefault();
-					console.log(e.target)
 					e.target.parentNode.classList.toggle('selected');
-				}.bind(this)}>
+				}}>
 					<span className="ico_heart">쇼핑찜하기</span>
 				</button>
 				<button type="button" className="btn_del" onClick={function(e){

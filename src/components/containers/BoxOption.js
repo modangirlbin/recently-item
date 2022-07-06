@@ -1,4 +1,4 @@
-import BoxOption from '../container/BoxOption';
+import BoxOption from '../views/BoxOption';
 import {connect} from 'react-redux';
 
 

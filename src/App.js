@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import ContainerTemplate from './components/container/ContainerTemplate';
+import ContainerTemplate from './components/views/ContainerTemplate';
 import Footer from './components/Footer';
 import store from './store'
 
