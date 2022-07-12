@@ -24,8 +24,8 @@ class App extends Component {
 
 		// 상품갯수
 		let num = 0, i = 0;
-		while(i < json.length){
-			num = num + json[i].content.length;
+		while(i < this.state.data.length){
+			num = num + this.state.data[i].content.length;
 			i++;			
 		}
 		this.setState({count:num});
