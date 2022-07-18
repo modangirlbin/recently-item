@@ -7,40 +7,37 @@ import ItemDefault from './ItemDefault';
 
 // const ItemsTemplate = () => {
 // 요러면 props도 못읽고, this=undefind why?
-const ItemsTemplate = ({data, idx, key2}) => {
-		const data2 = data.content;
-		let i = 0;
+const ItemsTemplate = ({data, idx, content}) => {
+
+	let i = 0;
 	
-		let lists2 = [];
-		while(i<data2.length){
-			if (data2[i].type === 'check') {
-				lists2.push(
-					<ItemCheck key={key2[i].id} ico={data2[i].ico}/>
-				);
+	let lists2 = [];
+	while(i<content.length){
+			if (content[i].type === 'check') {
+					lists2.push(
+							<ItemCheck key={content[i].id} ico={content[i].ico}/>
+					);
 			}
-			else if (data2[i].type === 'default') {
-				lists2.push(
-					<ItemDefault 
-						key = {key2[i].id} 
-						id  = {idx} 
-						id2 = {key2[i].id-1}
-						deleteItem = {function(a, b){
-							// this.props.deleteItem2(a, b);
-							console.log(a, b);
-						}}
-					/>
-				);
+			else if (content[i].type === 'default') {
+					lists2.push(
+							<ItemDefault 
+									key = {content[i].id} 
+									id  = {idx} 
+									id2 = {content[i].id-1}
+							/>
+					);
 			}
 			i++;
-		}
-		return (
-		<div className="item_lately">
+	}
+	return (
+	<div className="item_lately">
 			<span className="cont_date2">{data.date}</span>
 			<ul className="list_chu_prod">
-				{lists2}
+					{lists2}
 			</ul>
-		</div>
-		);
-};
+	</div>
+	);
+}
+
 
 export default ItemsTemplate;

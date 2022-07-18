@@ -24,7 +24,7 @@ class ContainerTemplate extends Component {
               item_count2={this.props.item_count} 
             />
             <LatelyTemplate 
-              data2={this.props.data}
+              data={this.props.data}
             />
           </div>
         </div>

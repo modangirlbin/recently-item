@@ -8,24 +8,19 @@ import ItemsTemplate from './Items/ItemsTemplate';
 class LatelyTemplate extends Component {
 
 	render(){
-		//날짜별 리스트
-		let lists = [];
-		let i = 0;
-		let data = this.props.data2;
-		while(i < data.length){
-			lists.push(
-			<ItemsTemplate 
-				key={data[i].id} key2={data[i].content} 
-				data={data[i]} idx={i} 
-				// deleteItem2={function(){console.log('hi')}}
-			/>
-			);
-			i++;
-		}
-
+		let data = this.props.data;
+		
 		return (
 			<div className="lately_product">
-				{lists}
+				{/* 날짜별 리스트 */}
+				{data.map(
+					data => (
+							<ItemsTemplate 
+							key={data.id} content={data.content} 
+							data={data} idx={data.id} 
+							>하이</ItemsTemplate>
+						)
+					)}
 			</div>
 		);
 	}
