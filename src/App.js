@@ -37,7 +37,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-				{console.log(this.state)}
         <Header/>
         <ContainerTemplate 
 					data={this.state.arr} 

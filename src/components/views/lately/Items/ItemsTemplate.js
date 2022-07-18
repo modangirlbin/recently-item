@@ -7,7 +7,7 @@ import ItemDefault from './ItemDefault';
 
 // const ItemsTemplate = () => {
 // 요러면 props도 못읽고, this=undefind why?
-const ItemsTemplate = ({data, idx, content}) => {
+const ItemsTemplate = ({data, id1, content}) => {
 
 	let i = 0;
 	
@@ -22,7 +22,7 @@ const ItemsTemplate = ({data, idx, content}) => {
 					lists2.push(
 							<ItemDefault 
 									key = {content[i].id} 
-									id  = {idx} 
+									id1  = {id1-1} 
 									id2 = {content[i].id-1}
 							/>
 					);

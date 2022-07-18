@@ -28,8 +28,10 @@ class ItemDefault extends Component {
 				</button>
 				<button type="button" className="btn_del" onClick={function(e){
 					e.preventDefault();
-					store.dispatch({type:'DELETE', idx1:this.props.id, idx2:Number(this.props.id2)});
-					// console.log(this.state, Number(this.props.id))
+					store.dispatch({type:'DELETE', idx1:this.props.id1, idx2:this.props.id2});
+					if(this.props.id === 2){
+						console.log('hi')
+					}
 				}.bind(this)}><span className="ic2_14">삭제하기</span></button>
 			</li>
 		);

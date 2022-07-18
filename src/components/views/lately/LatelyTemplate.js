@@ -17,7 +17,7 @@ class LatelyTemplate extends Component {
 					data => (
 							<ItemsTemplate 
 							key={data.id} content={data.content} 
-							data={data} idx={data.id} 
+							data={data} id1={data.id} 
 							>하이</ItemsTemplate>
 						)
 					)}
