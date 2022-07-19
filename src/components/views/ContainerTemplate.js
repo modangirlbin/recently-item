@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import BannerSignIn from './BannerSignIn';
-import BoxOption from './BoxOption';
+import BoxOption from '../containers/BoxOption';
 import LatelyTemplate from './lately/LatelyTemplate';
 // 단점 : css 두형태 작성헷갈리고, 찾기 힘들고, 수정힘들고
 let styles = {
@@ -20,18 +20,11 @@ class ContainerTemplate extends Component {
         <div id="content" className="content" style={styles.content}>
           {/* <BannerSignIn/> */}
           <div className="wrap_lately">
-            <BoxOption 
+            <BoxOption
               item_count2={this.props.item_count} 
-              filterItems={function(){
-                
-              }}
             />
-            {/* {console.log(this.props.item_count)} */}
             <LatelyTemplate 
-              data2={this.props.data}
-              deleteItem={function(a,b){
-                this.props.deleteItem(a,b);
-              }}
+              data={this.props.data}
             />
           </div>
         </div>
