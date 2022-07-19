@@ -11,7 +11,6 @@ function mapStateToProps(state){
     i++;			
   }
   state.count=num;
-  console.log(state.count);
 
   return {
     count: state.count

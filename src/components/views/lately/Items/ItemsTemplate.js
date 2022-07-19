@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../../../../css/views/lately/lately_product.css';
 import '../../../../css/views/lately/item_lately.css';
 import ItemCheck from './ItemCheck';
-import ItemDefault from './ItemDefault';
+import ItemDefault from '../../../containers/lately/Items/ItemDefault';
 
 // const ItemsTemplate = () => {
 // 요러면 props도 못읽고, this=undefind why?
@@ -22,8 +22,8 @@ const ItemsTemplate = ({data, id1, content}) => {
 					lists2.push(
 							<ItemDefault 
 									key = {content[i].id} 
-									id1  = {id1-1} 
-									id2 = {content[i].id-1}
+									id1  = {id1} 
+									id2 = {content[i].id}
 							/>
 					);
 			}
