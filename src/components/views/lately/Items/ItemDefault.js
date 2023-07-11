@@ -9,7 +9,7 @@ class ItemDefault extends Component {
 			<li>
 				<a href="#none">
 					<span className="link_thumb">
-						<img src="../../../../img_item1.png" className="img_g" alt="쇼핑찜 썸네일 이미지"/>
+						<img src="https://raw.githubusercontent.com/modangirlbin/recently-item/master/src/img/img_item1.png?token=GHSAT0AAAAAACE6V5BR7LE3PVZPHK7V2T3AZFNCR2Q" className="img_g" alt="쇼핑찜 썸네일 이미지"/>
 					</span>
 					<div className="info_thumb">
 						<strong className="tit_prod"><span className="link_tit">[PALLA] 에이백 A-bag 라지</span></strong>
