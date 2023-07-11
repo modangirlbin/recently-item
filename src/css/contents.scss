@@ -21,3 +21,31 @@
     margin-left: 10px;
   }
 }  
+
+// item list
+
+.list_item{
+  >li{
+    position: relative;
+    margin: 10px 20px 10px 30px;
+  }
+  .btn_delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .btn_choice{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+.link_item{
+  display: flex;
+  .thumb_item{
+
+  }
+  .info_item{
+    
+  }
+}

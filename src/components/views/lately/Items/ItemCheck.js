@@ -7,7 +7,7 @@ class ItemCheck extends Component {
 		// console.log(this.props);
 		return (
 			<li className="lately_chk">
-				<a href="http://dev-markup.cjmall.com/jsp/dp_lately/m/lately_product.jsp#">
+				<a href="#none">
 					<span className={this.props.ico}>기획전</span>
 					<strong className="txt_chk"><span className="link_tit">백화점 네파 인기 BEST</span></strong>
 				</a>
