@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../../../css/views/lately/lately_product.css';
 // import ItemCheck from './children/ItemCheck';
 // 쪼개는 단점 :경로 복잡해짐(작성하면서 경로 안맞는거 계속보고있음)
 

@@ -1,4 +1,4 @@
-.lately_product {
+.lists_items {
     position: relative;
     background-color: #fff
 }
@@ -13,18 +13,18 @@
     content: ''
 }
 
-.item_lately {
+.list_items {
     position: relative;
     margin-left: 2.5rem;
     padding: 0;
     border-bottom: 1px solid #f0f0f0
 }
 
-.item_lately:last-child,.item_lately:only-child {
+.list_items:last-child,.list_items:only-child {
     border-bottom: none
 }
 
-.item_lately .cont_date,.item_lately .cont_date2 {
+.list_items .cont_date,.list_items .cont_date2 {
     position: absolute;
     top: 1.3rem;
     left: -1.5rem;
@@ -32,7 +32,7 @@
     height: 3.1rem;
     font-size: 1rem;
     line-height: 3.2rem;
-    background-color: #959595;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     color: #fff;
     text-align: center;
     z-index: 10;
@@ -46,7 +46,7 @@
     border-bottom-right-radius: 50%
 }
 
-.item_lately .cont_date2 {
+.list_items .cont_date2 {
     top: 4.8rem
 }
 

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.contents{
+  padding-top: 55px;
+}
+.wrap_lately{
+  background-color: #fff;
+}
+
+// BoxOption
+.area_option{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  background: #f4edff;
+}
+.group_option{
+  margin-left: auto;
+  .btn_delete{
+    margin-left: 10px;
+  }
+}  

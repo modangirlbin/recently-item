@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import store from '../../../../store';
-import '../../../../css/views/lately/lately_product.css';
 
 class ItemDefault extends Component {
  state = store.getState()
@@ -10,7 +9,7 @@ class ItemDefault extends Component {
 			<li>
 				<a href="#none">
 					<span className="link_thumb">
-						<img src="//thumb.cjmall.net/unsafe/fit-in/200x200/image.cjmall.net/public/confirm/assets/TMOCODE_REP_IMG/201907/16/M1016582/lianstyle20190716023258834.jpg" className="img_g" alt="쇼핑찜 썸네일 이미지"/>
+						<img src="../../../../img_item1.png" className="img_g" alt="쇼핑찜 썸네일 이미지"/>
 					</span>
 					<div className="info_thumb">
 						<strong className="tit_prod"><span className="link_tit">[PALLA] 에이백 A-bag 라지</span></strong>

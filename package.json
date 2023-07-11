@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^8.0.2",
     "react-scripts": "3.2.0",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +35,8 @@
   },
   "devDependencies": {
     "web-vitals": "^2.1.4"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   }
 }

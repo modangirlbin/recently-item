@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../../css/views/lately/lately_product.css';
 import ItemsTemplate from './Items/ItemsTemplate';
 import store from '../../../store';
 
@@ -11,7 +10,7 @@ class LatelyTemplate extends Component {
 state = store.getState();
 render(){		
 		return (
-			<div className="lately_product">
+			<div className="area_lists">
 				{/* 날짜별 리스트 */}
 				{this.state.arr.map(
 					data => (

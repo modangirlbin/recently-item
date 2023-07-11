@@ -1,7 +1,5 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
-import '../../../../css/views/lately/lately_product.css';
-import '../../../../css/views/lately/item_lately.css';
 import ItemCheck from './ItemCheck';
 import ItemDefault from '../../../containers/lately/Items/ItemDefault';
 
@@ -30,9 +28,9 @@ const ItemsTemplate = ({data, id1, content}) => {
 			i++;
 	}
 	return (
-	<div className="item_lately">
-			<span className="cont_date2">{data.date}</span>
-			<ul className="list_chu_prod">
+	<div className="box_date">
+			<span className="date">{data.date}</span>
+			<ul className="list_item">
 					{lists2}
 			</ul>
 	</div>

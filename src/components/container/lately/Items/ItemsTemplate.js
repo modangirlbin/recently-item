@@ -1,7 +1,6 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
 import '../../../../css/container/lately/lately_product.css';
-import '../../../../css/container/lately/item_lately.css';
 import ItemCheck from './ItemCheck';
 import ItemDefault from './ItemDefault';
 
