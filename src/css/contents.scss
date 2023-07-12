@@ -13,7 +13,7 @@
   align-items: center;
   height: 50px;
   padding: 0 15px;
-  background: #f4edff;
+  background: #f3fdff;
 }
 .group_option{
   margin-left: auto;
@@ -23,29 +23,64 @@
 }  
 
 // item list
-
+.area_lists{
+  padding: 15px 15px 100px;
+}
+.box_date{
+  .date{
+    font-size: 14px;
+  }
+}
 .list_item{
   >li{
     position: relative;
-    margin: 10px 20px 10px 30px;
+    margin-left: 30px;
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px dotted #ddd;
   }
-  .btn_delete{
+  .box_btn{
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 10px;
+  }
+  .btn_delete, .btn_choice{
+    width: 25px;
+    height: 25px;
+    background: pink;
   }
   .btn_choice{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-left: 10px;
+  }
+  .btn_delete{
+    margin-left: 5px;
+  }
+  .tit_page{
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  .ico_event{
+    padding: 4px;
+    border: 1px solid magenta;
+    color: magenta;
   }
 }
 .link_item{
   display: flex;
   .thumb_item{
-
+    flex-basis: 100px;
+    img{
+      width: 100%;
+    }
   }
   .info_item{
-    
+    margin-left: 10px;
+    font-weight: normal;
+  }
+  .price_item{
+    display: block;
+    font-weight: bold;
+  }
+  .tit_item{
+    font-weight: normal;
   }
 }

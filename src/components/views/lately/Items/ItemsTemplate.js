@@ -29,7 +29,7 @@ const ItemsTemplate = ({data, id1, content}) => {
 	}
 	return (
 	<div className="box_date">
-			<span className="date">{data.date}</span>
+			<h2 className="date">{data.date}</h2>
 			<ul className="list_item">
 					{lists2}
 			</ul>

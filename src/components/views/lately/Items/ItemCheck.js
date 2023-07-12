@@ -6,12 +6,12 @@ class ItemCheck extends Component {
 	render() {
 		// console.log(this.props);
 		return (
-			<li className="lately_chk">
+			<li className="type_page">
 				<a href="#none">
-					<span className={this.props.ico}>기획전</span>
-					<strong className="txt_chk"><span className="link_tit">백화점 네파 인기 BEST</span></strong>
+					<span className={this.props.ico}>이벤트</span>
+					<span className="tit_page"><strong>BEST</strong> 상품 출석 체크이벤트</span>
 				</a>
-				<button type="button" className="btn_del"><span className="ic2_14">삭제하기</span></button>
+				<button type='button' className='btn_delete'><span className="offscreen">삭제하기</span></button>
 			</li>
 		);
   }

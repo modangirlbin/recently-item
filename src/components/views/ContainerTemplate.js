@@ -14,6 +14,9 @@ class ContainerTemplate extends Component {
         <LatelyTemplate 
           data={this.props.data}
         />
+        <section className='area_banner'>
+          <img src='' alt='이벤트배너'/>
+        </section>
       </div>
     );
   }

@@ -8,17 +8,17 @@ let data =
         "date": "12.10",
         "content": [
           {"id": 1, "type": "default"},
-          {"id": 2, "type": "check", "ico": "ico_video"},
-          {"id": 3, "type": "check", "ico": "ico_mark"}
+          {"id": 2, "type": "check", "ico": "ico_live"},
+          {"id": 3, "type": "check", "ico": "ico_event"}
         ]
       },
       {
         "id": 2,
         "date": "12.11",
         "content": [
-          {"id": 1, "type": "check", "ico":"ico_video"},
+          {"id": 1, "type": "check", "ico":"ico_live"},
           {"id": 2, "type": "default"},
-          {"id": 3, "type": "check", "ico":"ico_mark"}
+          {"id": 3, "type": "check", "ico":"ico_event"}
         ]
       },
       {
@@ -27,7 +27,7 @@ let data =
         "content": [
           {"id": 1, "type": "default"},
           {"id": 2, "type": "default"},
-          {"id": 3, "type": "check", "ico":"ico_video"}
+          {"id": 3, "type": "check", "ico":"ico_live"}
         ]
       }
     ],

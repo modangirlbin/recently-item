@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/footer.css';
+import '../css/footer.scss';
 
 // 쪼갤가 말까 고민(수정이 들어올때 한번에 바뀌는 단위?)
 // 기능 개발하기는 쪼개는개 나을거 같기도
@@ -9,10 +9,8 @@ import '../css/footer.css';
 class Footer extends Component {
   render() {
     return (
-      <div id="footer">
-        <div className="footer_wrap">
-
-        </div>
+      <div id='footer' className='footer'>
+        <p className='help'>이용 중 도움이 필요하시면 [고객지원] 페이지로, 로그인에 문제가 있다면 help@testsite.com으로 문의 해 주세요.</p>
       </div>
     );
   }
