@@ -15,7 +15,7 @@ class ContainerTemplate extends Component {
           data={this.props.data}
         />
         <section className='area_banner'>
-          <img src='' alt='이벤트배너'/>
+          <img className='img' src='https://raw.githubusercontent.com/modangirlbin/recently-item/master/src/img/banner.png' alt='이벤트배너'/>
         </section>
       </div>
     );

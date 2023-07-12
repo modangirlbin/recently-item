@@ -38,21 +38,48 @@
     padding: 10px 20px 10px 0;
     border-bottom: 1px dotted #ddd;
   }
+  .type_page{
+    .btn_delete{
+      position: absolute;
+      right: 0;
+    }
+  }
   .box_btn{
     position: absolute;
     right: 0;
     bottom: 10px;
+    .btn_delete{
+      margin-left: 5px;
+    }
+    &.selected{
+      .btn_choice{
+        background-position: -66px -26px;
+      }
+    }
   }
   .btn_delete, .btn_choice{
-    width: 25px;
-    height: 25px;
-    background: pink;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://raw.githubusercontent.com/modangirlbin/recently-item/master/src/img/sp_common.png);
+    background-repeat: no-repeat;
+
   }
   .btn_choice{
     margin-left: 10px;
+    background-position: -89px -26px;
+    background-size: 230px auto;
+    // -66px -26
+    .selected &{
+      background-position: -66px -26px;
+    }
   }
   .btn_delete{
-    margin-left: 5px;
+    background-position: 0 -43px;
+    background-size: 250px auto;
+    // .type_page &{
+    //   position: absolute;
+    //   right: 0;
+    // }
   }
   .tit_page{
     margin-left: 10px;
@@ -60,8 +87,22 @@
   }
   .ico_event{
     padding: 4px;
-    border: 1px solid magenta;
-    color: magenta;
+    font-weight: bold;
+    color: skyblue;
+  }
+  .ico_live{
+    @extend .ico_event;
+    position: relative;
+    margin-left: 42px;
+    &::before{
+      content: "Live";
+      position: absolute;
+      margin-left: -45px;
+      padding: 0px 6px;
+      border-radius: 10px;
+      color: #fff;
+      background-color: red;
+    }
   }
 }
 .link_item{
@@ -82,5 +123,10 @@
   }
   .tit_item{
     font-weight: normal;
+  }
+}
+.area_banner{
+  .img{
+    width: 100%;
   }
 }

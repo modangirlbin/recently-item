@@ -18,10 +18,10 @@ class ItemDefault extends Component {
 						</span>
 					</div>
 				</a>
-				<span className='box_btn'>
-					<button type='button' className='btn_choice' 					onClick={function(e){
-							e.preventDefault();
-							e.target.parentNode.classList.toggle('selected');
+				<span className='box_btn selected'>
+				<button type='button' className='btn_choice' 			onClick={function(e){
+						e.preventDefault();
+						e.target.parentNode.classList.toggle('selected');
 					}}><span className="offscreen">관심상품 등록하기</span></button>
 					<button type='button' className='btn_delete' 		onClick={function(){
 							this.props.onClick2();
