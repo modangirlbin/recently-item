@@ -9,7 +9,7 @@ class ItemCheck extends Component {
 			<li className="type_page">
 				<a href="#none">
 					<span className={this.props.ico}>이벤트</span>
-					<span className="tit_page"><strong>BEST</strong> 상품 출석 체크이벤트</span>
+					<span className="tit_page"><strong>BEST</strong> 상품 출석 체크이벤트체크이벤트체크이벤트체크이벤트체크이벤트체크이벤트체크이벤트체크이벤트체크이벤트</span>
 				</a>
 				<button type='button' className='btn_delete'><span className="offscreen">삭제하기</span></button>
 			</li>

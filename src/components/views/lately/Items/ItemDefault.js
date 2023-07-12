@@ -12,7 +12,7 @@ class ItemDefault extends Component {
 						<img src='https://raw.githubusercontent.com/modangirlbin/recently-item/master/src/img/img_item4.png' alt=''/>
 					</span>
 					<div className='info_item'>
-						<span className='tit_item'><strong>[숑숑옷방]</strong> 멍멍 냥냥 우리집 강아지 인싸되는 원피스 빨강/파랑/노랑 있어요</span>
+						<span className='tit_item'><strong>[숑숑옷방]</strong> 멍멍 냥냥 우리집 강아지 인싸되는 원피스 멍멍 냥냥 우리집 강아지 인싸되는 원피스멍멍 냥냥 우리집 강아지 인싸되는 원피스</span>
 						<span className='price_item'>
 							138,000원~
 						</span>

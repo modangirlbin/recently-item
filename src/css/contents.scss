@@ -14,9 +14,13 @@
   height: 50px;
   padding: 0 15px;
   background: #f3fdff;
+  .num_total{
+    color: #777;
+  }
 }
 .group_option{
   margin-left: auto;
+  color: #777;
   .btn_delete{
     margin-left: 10px;
   }
@@ -24,10 +28,11 @@
 
 // item list
 .area_lists{
-  padding: 15px 15px 100px;
+  padding: 0 15px 50px;
 }
 .box_date{
   .date{
+    margin: 20px 0 10px 0;
     font-size: 14px;
   }
 }
@@ -53,7 +58,7 @@
     }
     &.selected{
       .btn_choice{
-        background-position: -66px -26px;
+        background-position: -66px -24px;
       }
     }
   }
@@ -74,7 +79,7 @@
     }
   }
   .btn_delete{
-    background-position: 0 -43px;
+    background-position: 1px -40px;
     background-size: 250px auto;
     // .type_page &{
     //   position: absolute;
@@ -82,8 +87,15 @@
     // }
   }
   .tit_page{
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 5px;
     font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: calc(100% - 75px);
+    vertical-align: top;
   }
   .ico_event{
     padding: 4px;
@@ -100,15 +112,19 @@
       margin-left: -45px;
       padding: 0px 6px;
       border-radius: 10px;
+      line-height: 18px;
       color: #fff;
       background-color: red;
+    }
+    +.tit_page{
+      max-width: calc(100% - 115px);
     }
   }
 }
 .link_item{
   display: flex;
   .thumb_item{
-    flex-basis: 100px;
+    flex: 0 0 70px;
     img{
       width: 100%;
     }
@@ -122,7 +138,14 @@
     font-weight: bold;
   }
   .tit_item{
+    display: -webkit-box;
+    word-break: break-all;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
     font-weight: normal;
+    overflow: hidden;
   }
 }
 .area_banner{
