@@ -11,8 +11,8 @@ class Header extends Component {
 						<span className='ico_home'>홈으로</span>
 					</a>
 					<h1 className='tit'>최근 본 목록</h1>
-					<a href='#none' className='btn_search'>
-						<span className='ico_search'>장바구니</span>
+					<a href='#none' className='link_basket'>
+						<span className='ico_basket'>장바구니</span>
 					</a>
 				</div>
 			</header>

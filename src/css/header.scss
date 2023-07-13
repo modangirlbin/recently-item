@@ -19,13 +19,13 @@
     font-weight: normal;
     color: #fff;
   }
-  .link_home,.btn_search{
+  .link_home,.link_basket{
     display: block;
     position: relative;
     width: 40px;
     height: 40px;
   }
-  .ico_home, .ico_search{
+  .ico_home, .ico_basket{
     position: absolute;
     top: calc(50% - 15px);
     left: calc(50% - 15px);
@@ -42,7 +42,7 @@
   .ico_home{
     background-position: -102px 3px;
   }
-  .ico_search{
-    background-position: -128px 2px;
+  .ico_basket{
+    background-position: -187px 2px;
   }
 }

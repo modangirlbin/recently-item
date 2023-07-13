@@ -22,7 +22,21 @@
   margin-left: auto;
   color: #777;
   .btn_delete{
-    margin-left: 10px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  .btn_search{
+    width: 30px;
+    height: 30px;
+    font-size: 1px;
+    line-height: 0;
+    vertical-align: top;
+    color: rgba(0, 0, 0, 0);
+    background-image: url(../img/sp_common.png);
+    background-position: -51px 3px;
+    background-repeat: no-repeat;
+    background-size: 250px auto;
+    overflow: hidden;
   }
 }  
 
@@ -71,7 +85,7 @@
   }
   .btn_choice{
     margin-left: 10px;
-    background-position: -89px -26px;
+    background-position: -90px -24px;
     background-size: 230px auto;
     // -66px -26
     .selected &{
